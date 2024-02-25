@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Olá, seja bem-vindo ao FutDados</title>
+</head>
+
+<body>
+	<div class="mascara"></div>
+
+	<form class="form-acesso" action="" method="get" enctype="multipart/form-data">
+		<label><input class="bem-vindo" name="Bem-vindo" type="text" value="Seja bem-vindo ao FutDados"
+				readonly></input></label>
+		<label><input name="nome de usuário" type="text" placeholder="nome de usuário"></label>
+		<label><input name="senha" type="password" placeholder="senha"></label>
+		<button class="entrar" type="submit">
+		</button>
+		<label><input class="informacao" name="informação botão de cadastro" type="text"
+				value="não está cadastrado?" readonly></input></label>
+		<a class="link-cadastro" alt="link para realizar o cadastro" onclick="cliqueiNoCadastro()"></a>
+
+	</form>
+
+	<form class="form-cadastro" action="" method="get" enctype="multipart/form-data">
+		<label><input class="cadastro" name="Faça seu cadastro" type="text" value="Faça seu cadastro"
+				readonly></input></label>
+		<label><input type="text" name="e-mail" placeholder="e-mail"></label>
+		<label><input type="text" name="nome de usuário" placeholder="nome de usuário"></label>
+		<label><input type="password" name="senha" placeholder="senha"></label>
+		<label><input type="password" name="confirmar senha" placeholder="confirme sua senha"></label>
+		<button class="cadastrar" type="submit">
+		</button>
+		<label><input class="informacao" type="text" name="já é cadastrado? clique abaixo"
+				value="já está cadastrado?" readonly></input></label>
+
+		<a class="link-entrar" alt="link para tela inicial" onclick="cliqueiNoEntrar()"></a>
+
+	</form>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Kode Mono", monospace;
+}
+
+.mascara {
+	width: 100vw;
+	height: 100vh;
+	background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(154, 154, 154, 1) 50%, rgba(74, 74, 74, 1) 100%);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	opacity: 0.5;
+}
+
+body {
+	background: url(./assets/bg-jogador-bola.png);
+	background-position: top;
+	background-size: 100vw 100vh;
+}
+
+form {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40px;
+}
+
+input {
+	width: 400px;
+	height: 50px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	padding-left: 15px;
+	border-radius: 10px;
+	outline: 0;
+	background: url(./assets/bg-input.png);
+	background-size: cover;
+	background-position: center;
+	color: rgb(255, 255, 255);
+}
+
+input::placeholder {
+	color: rgb(202, 202, 202);
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+button,
+a {
+	width: 400px;
+	height: 50px;
+	background: url(./assets/botao-entrar.png);
+	background-size: cover;
+	background-position: center;
+	opacity: .4;
+	cursor: pointer;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+}
+
+button:hover {
+	opacity: .6;
+}
+
+a:hover {
+	opacity: .6;
+}
+
+button:active {
+	opacity: 1;
+}
+
+a:active {
+	opacity: 1;
+}
+
+.informacao {
+	background: transparent;
+	border: 0;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+	font-weight: bolder;
+	font-size: 16px;
+	opacity: 1;
+}
+
+.link-cadastro {
+	background: url(./assets/botao-cadastro.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.link-entrar {
+	background: url(./assets/botao-entrar.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.bem-vindo {
+	background: transparent;
+	border: 0;
+	color: rgb(0, 0, 0);
+	padding: 0;
+	font-weight: bolder;
+	opacity: 1;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 20vh;
+}
+
+.cadastro {
+	background: transparent;
+	border: 0;
+	color: rgb(0, 0, 0);
+	padding: 0;
+	font-weight: bolder;
+	opacity: 1;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 10vh;
+}
+
+.cadastrar {
+	background: url(./assets/botao-cadastrar.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.form-acesso {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	transition: left 1.5s ease-in-out;
+}
+
+.form-acesso a {
+	z-index: 1000;
+}
+
+.form-cadastro {
+	position: fixed;
+	top: 0%;
+	right: -100%;
+	transition: right 1.5s ease-in-out;
+}
+
+.form-cadastro a {
+	z-index: 1000;
+}
+
+
+@media (max-width: 450px) and (orientation:portrait) {
+
+	input,
+	button,
+	a {
+		width: 80vw;
+	}
+
+	.bem-vindo,
+	.cadastro,
+	.informacao {
+		font-size: unset;
+		width: 100vw;
+	}
+
+	.bem-vindo, .cadastro {
+		margin-bottom: 5vh;
+	}
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+	input,
+	button,
+	a {
+		height: 40px;
+	}
+}
