@@ -24,4 +24,5 @@ quando o usuário clica nos links Cadastre-se na primeira página e Entrar na se
 <br>
 
 <h2>Curiosidades:</h2>
+<p>Este foi meu primeiro projeto 100% original, pensado e desenvolvido inteiramente por mim.</p>
 <p>A estética do site remete ao jogo Brasfoot, jogo de gerenciamento do início dos anos 2000, onde você assumia as funções de manager de um clube de futebol.</p>
